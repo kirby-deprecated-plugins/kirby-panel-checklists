@@ -1,0 +1,27 @@
+.k-list[type="checklist"] .k-list-item-text {
+  padding-left: 0;
+}
+
+.k-list[type="checklist"] .icon-green .k-icon svg {
+  color: #5d800d;
+}
+
+.k-list[type="checklist"] .icon-blue .k-list-item-image .k-icon svg {
+  color: #4271ae;
+}
+
+.k-list[type="checklist"] .icon-gray .k-list-item-image .k-icon svg {
+  color: #777;
+}
+
+.k-list[type="checklist"] .icon-red .k-list-item-image .k-icon svg {
+  color: #c82829;
+}
+
+.k-list[type="checklist"] .icon-black .k-list-item-image .k-icon svg {
+  color: #000;
+}
+
+.k-list[type="checklist"] .icon-orange .k-list-item-image .k-icon svg {
+  color: #de935f
+}
