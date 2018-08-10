@@ -1,6 +1,6 @@
 # Kirby Panel Checklists
 
-Automatic checklists inside the panel. You can test anything you want.
+Create automatic checklists inside the panel. You can test anything you want.
 
 - **Version:** 0.1 alpha
 - **Requirement:** Kirby 3
