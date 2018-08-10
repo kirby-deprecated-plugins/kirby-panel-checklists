@@ -18,7 +18,7 @@ First you need to setup some tests. It's done in your config file.
 
 *In the alpha version this plugin is limited to 1 checklist and it needs to be called `my_checklist` in order to work*
 
-```
+```php
 return [
   'jenstornell.checklists.lists' => [
     'my_checklist' => [
