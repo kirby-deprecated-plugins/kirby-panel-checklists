@@ -18,6 +18,7 @@ To see the field add the following into your blueprint.
 
 ```text
 checklist:
+  label: My checklist
   type: checklist
   list: my_checklist
 ```
