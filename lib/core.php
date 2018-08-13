@@ -1,6 +1,6 @@
 <?php
 class PanelChecklists {
-  function render($page, $list = 'my_checklist') {
+  function render($page, $list) {
     $option = option('jenstornell.checklists.lists')[$list];
     foreach($option as $item) {
       if(is_callable($item)) {

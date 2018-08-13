@@ -2,7 +2,7 @@
 
 Create automatic checklists inside the panel. You can test anything you want.
 
-- **Version:** 0.1 alpha
+- **Version:** 0.2 beta
 - **Requirement:** Kirby 3
 - [Changelog](docs/changelog.md)
 - [Disclaimer](https://devonera.se/docs/disclaimer/?user=jenstornell&plugin=kirby-panel-checklists)
@@ -12,11 +12,19 @@ Create automatic checklists inside the panel. You can test anything you want.
 
 ![](docs/screenshot.png)
 
-## Setup
+## Blueprint
 
-First you need to setup some tests. It's done in your config file.
+To see the field add the following into your blueprint.
 
-*In the alpha version this plugin is limited to 1 checklist and it needs to be called `my_checklist` in order to work*
+```text
+checklist:
+  type: checklist
+  list: my_checklist
+```
+
+## Usage
+
+Now you need to setup some tests. It's done in your config file, or in a plugin.
 
 ```php
 return [
@@ -41,15 +49,29 @@ return [
 ];
 ```
 
-Each function represents one test and one list item. The available colors are blue, green, orange, black, red, gray.
+Each function represents one test and one list item.
 
-## Blueprint
+- The available colors are `black`, `blue`, `gray`, `green`, `orange`,  and `red`.
+- The available icons are the ones that are built into the panel.
 
-To see the field add the following into your blueprint.
+## Plugin support
 
-```text
-checklist:
-  type: checklist
+With many items directly in the config file, it can be messy. To clean it up, you can wrap it inside a plugin.
+
+### A full list
+
+```php
+function checklistsMyChecklist() {
+  // Return the whole checklist array
+}
+```
+
+### Just one list item
+
+```php
+function checklistsMyitem() {
+  // Return just one list item
+}
 ```
 
 ## Checklist ideas

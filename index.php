@@ -5,10 +5,10 @@ Kirby::plugin('jenstornell/checklists', [
   'fields' => [
     'checklist' => [
       'props' => [
-        'message' => function() {
+        'list' => function($value = null) {
           $PanelChecklists = new PanelChecklists();
-          return $PanelChecklists->render($this->model());
-        }
+          return $PanelChecklists->render($this->model(), $value);
+        },
       ]
     ]
   ]
